@@ -1,0 +1,27 @@
+<div class="form-box" id="login-box" style="margin: 20px 30px">
+            <div class="header" style="background-color: #c1c1c1">Cadastro de Instituicao</div>
+            <form action="instituicaoEdit.php" method="post">
+            	 <input type="hidden" name="id_instituicao" id="id_instituicao" value="%id_instituicao%" />
+                <div class="body bg-gray">
+                	<div class="form-group">
+                        <input type="text" name="nome" value="%nome%" class="form-control" placeholder="Preencha o nome"/>
+                    </div>
+                    <div class="form-group">
+                        <select id="status" name="status">
+					    	<option %selected1% value="1">Ativo</option>
+					    	<option %selected0% value="0">Inativo</option>
+					    </select>
+                    </div> 
+           
+                </div>
+                <div class="footer" style="background-color: #c1c1c1">                                                               
+                    <button type="submit" class="btn bg-olive btn-block">Salvar</button>  
+                    <a type="button" style="font-style: bold" href="instituicaoListar.php" class="btn bg-olive btn-block">Voltar</a> 
+                    
+                   
+                </div>
+                
+            </form>
+
+           
+        </div>

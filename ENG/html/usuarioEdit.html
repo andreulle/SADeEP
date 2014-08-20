@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap 101 Template</title>
+		<!--%html_static_include%-->
+	</head>
+	<body>
+		<!--%nav_bar%-->
+		<div class="container">
+			<!--%aInserir%-->
+			<form class="form-horizontal" method="post" action="usuarioEdit.php">
+				<input type="hidden" value="%usuarioId%" name="usuarioId" />
+				<fieldset>
+					<legend>
+						%UserAction%
+					</legend>
+					<div class="control-group">
+						<label class="control-label" for="usuarioNome">Nome</label>
+						<div class="controls">
+							<input type="text" value="%usuarioNome%" id="usuarioNome" name="usuarioNome" placeholder="Nome">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="usuarioEmail">E-mail</label>
+						<div class="controls">
+							<input type="text" value="%usuarioEmail%" id="usuarioEmail" name="usuarioEmail" placeholder="E-Mail">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="usuarioEmail">RA</label>
+						<div class="controls">
+							<input type="text" value="%usuarioRa%" id="usuarioRa" name="usuarioRa" placeholder="RA">
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<button type="submit" class="btn btn-success">
+								Salvar
+							</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+			<!--%aInserir%-->
+			<!--%Inserido%-->
+				<!--%InseridoComSucesso%-->
+					<div class="alert alert-success">
+					  Usuário inserido com sucesso!
+					</div>
+				<!--%InseridoComSucesso%-->
+				<!--%NaoInserido%-->
+					<div class="alert alert-success">
+					  Não foi possível inserir o usuário!
+					</div>
+				<!--%NaoInserido%-->
+			<!--%Inserido%-->
+		</div>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
